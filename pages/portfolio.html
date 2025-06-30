@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leandro Fugioka - CV</title>
+    <!-- Fonte utilizada, origem: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- Arquivo de estilos do trabalho -->
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="container">
+    <!-- Header com os links para as diferentes páginas -->
+    <header>
+      <ul>
+        <li><a href="../index.html">Sobre</a></li>
+        <li><a href="./formacao.html">Formação</a></li>
+        <li><a href="#">Portfólio</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- Seção contendo meu nome e cargos almejados -->
+    <!-- Optei por construir dessa maneira unindo a formatação de um CV e o campo "título" do perfil do Linkedin -->
+    <section class="name">
+      <div>
+        <h1>Leandro Fugioka</h1>
+        <p>Desenvolvedor de Agentes de IA | Engenheiro de Software de IA | Desenvolvedor IA | Cientista de Dados</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Seção principal da página -->
+    <main class="main-section">
+      <h2>Portfólio:</h2>
+
+      <!-- Partição "cards-list" para organizar os projetos em uma grid de 3 colunas -->
+      <!-- Poderia ter utilizado um flexbox porém o grid facilita dispor os cards do projeto na posição de cada coluna -->
+      <div class="cards-list">
+        <!-- Card 1 - Web App de Imobiliária -->
+        <div>
+          <img src="image source" class="img-fluid rounded-top" alt="" />
+
+          <div>
+            <h3>Página de Imobiliária</h3>
+            <p>Projeto construído durante curso sobre NextJS na plataforma Udemy</p>
+            <p>Tecnologias:</p>
+            <ul>
+              <li>NextJS</li>
+              <li>MongoDB</li>
+              <li>Typescript</li>
+              <li>AuthJS</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2 - Web App Reddit simplificado -->
+        <div>
+          <img src="image source" class="img-fluid rounded-top" alt="" />
+
+          <div>
+            <h3>Discuss App</h3>
+            <p>Projeto construído durante curso sobre NextJS na plataforma Udemy</p>
+            <p>Tecnologias:</p>
+            <ul>
+              <li>NextJS</li>
+              <li>PostgreSQL</li>
+              <li>Typescript</li>
+              <li>AuthJS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
