@@ -30,10 +30,16 @@
   border: solid 1px black;
 }
 
+/* Como o header fica fixo, e na página de    */
+/* portfolio o conteúdo é longo, o background */
+/* na cor branca é para "esconder" o que está */
+/* no fundo. O z-index é para garantir que o  */
+/* header fica a frente do card do portfolio. */
 header {
   max-width: 100%;
   position: fixed;
   background-color: white;
+  z-index: 2;
 }
 
 header nav {
@@ -86,6 +92,7 @@ main {
   padding-bottom: 20px;
 }
 
+/* Estilos para: index.html */
 .about {
   text-align: justify;
   text-justify: inter-word;
@@ -123,9 +130,12 @@ h4 {
   gap: 2rem;
 }
 
+/* Adicinado "zoom" ao card do portfolio */
+/* quando o mouse ficar em cima do card  */
+/* configurado transição mais suave.     */
 .portfolio .card {
   border: 1px solid #eee;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
   transition: transform 0.5s ease;
   max-width: 100%;
 }
@@ -161,6 +171,7 @@ h4 {
   display: inline-block;
   align-self: flex-end;
   text-decoration: none;
+  border-radius: 8px;
   padding: 1rem 2rem;
 }
 
