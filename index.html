@@ -9,67 +9,142 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
+    <!-- Ícones do Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
     <!-- Arquivo de estilos do trabalho -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="container">
     <!-- Header com os links para as diferentes páginas -->
     <header>
-      <ul>
-        <li><a href="#" class="selected">Sobre</a></li>
-        <li><a href="./pages/formacao.html">Formação</a></li>
-        <li><a href="./pages/portfolio.html">Portfólio</a></li>
-        <li><a href="./pages/contato.html">Contato</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="#" class="selected">Sobre</a></li>
+          <li><a href="./pages/formacao.html">Formação</a></li>
+          <li><a href="./pages/portfolio.html">Portfólio</a></li>
+          <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="divider"></div>
+
+      <!-- Seção contendo meu nome e cargos almejados -->
+      <!-- Optei por construir dessa maneira unindo a formatação de um CV e o campo "título" do perfil do Linkedin -->
+      <section class="name">
+        <div>
+          <h1>Leandro Fugioka</h1>
+          <p>Desenvolvedor de Agentes de IA | Engenheiro de Software de IA | Desenvolvedor IA | Cientista de Dados</p>
+        </div>
+      </section>
+
+      <div class="divider"></div>
     </header>
-
-    <div class="divider"></div>
-
-    <!-- Seção contendo meu nome e cargos almejados -->
-    <!-- Optei por construir dessa maneira unindo a formatação de um CV e o campo "título" do perfil do Linkedin -->
-    <section class="name">
-      <div>
-        <h1>Leandro Fugioka</h1>
-        <p>Desenvolvedor de Agentes de IA | Engenheiro de Software de IA | Desenvolvedor IA | Cientista de Dados</p>
-      </div>
-    </section>
-
-    <div class="divider"></div>
 
     <!-- Seção principal da página -->
     <main>
       <h2>Sobre mim:</h2>
-      <p>
-        Sou formado em Engenharia Química e atualmente curso Pós-Graduação em Ciência de Dados e Inteligência Artificial, com previsão de conclusão em junho de 2026. Atuei em
-        ambientes que exigiram organização de informações, melhoria de processos e comunicação com diferentes níveis hierárquicos. Tenho experiência na transoformação de
-        processos físicos em digitais com o uso de Excel, além de participação ativa em projetos de modernização administrativa no setor público.Também atuei no setor privado,
-        otimizando relatórios em Excel e colaborando com equipes de dados na automação de rotinas.
+      <p class="about">
+        Sou formado em Engenharia Química e atualmente curso Análise e Desenvolvimento de Sistemas, com previsão de conclusão em dezembro de 2026. Atuei em ambientes que
+        exigiram organização de informações, melhoria de processos e comunicação com diferentes níveis hierárquicos. Tenho experiência na transoformação de processos físicos
+        em digitais com o uso de Excel, além de participação ativa em projetos de modernização administrativa no setor público. Também atuei no setor privado, otimizando
+        relatórios em Excel e colaborando com equipes de dados na automação de rotinas.
       </p>
 
-      <p>Estou me aprofundando nas seguintes ferramentas:</p>
-      <ul>
-        <li>LangChain</li>
-        <li>Hugging Face</li>
-        <li>Databricks</li>
-        <li>Apache Spark</li>
-        <li>Apache Airflow</li>
-        <li>Snowflake</li>
-        <li>S3 - AWS</li>
-        <li>Google BigQuery</li>
-        <li>PowerBI</li>
-        <li>Docker</li>
-        <li>Kubernetes</li>
-      </ul>
+      <h3>Tecnologias, ferramentas e linguagens de programação que utilizo:</h3>
 
-      <p>Possuo conhecimento nos seguintes frameworks/linguagens de programação:</p>
-      <ul>
-        <li>Python</li>
-        <li>Javascript</li>
-        <li>SQL</li>
-        <li>NextJS</li>
-        <li>ReactJS</li>
-        <li>Django</li>
-      </ul>
+      <div class="cards-list">
+        <div class="card">
+          <h4><i class="fa-solid fa-brain fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Inteligência Artificial (ML, LLM e Agentes)</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>Hugging Face</li>
+            <li><i class="fa-solid fa-check"></i><span></span>LangChain</li>
+            <li><i class="fa-solid fa-check"></i><span></span>LangGraph</li>
+            <li><i class="fa-solid fa-check"></i><span></span>n8n</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4><i class="fa-solid fa-warehouse fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Data Lakehouse e Warehouse</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>Databricks</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Snowflake</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Google BigQuery</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Amazon Redshift</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4><i class="fa-solid fa-code fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Linguagens de Programação</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>Python</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Javascript</li>
+            <li><i class="fa-solid fa-check"></i><span></span>SQL</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Java</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4><i class="fa-solid fa-bucket fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Data Lake</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>Amazon S3</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Google Cloud Storage</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4><i class="fa-solid fa-chart-simple fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Relatórios e Dashboards</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>PowerBI</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Excel</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4><i class="fa-brands fa-docker fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Conteinerização</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>Docker</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Kubernetes</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4><i class="fa-solid fa-microchip fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Processamento, Orquestração e Mensageria</h4>
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>Apache Spark</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Apache Airflow</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Apache Kafka</li>
+            <li><i class="fa-solid fa-check"></i><span></span>HDFS</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4><i class="fa-solid fa-desktop fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Frameworks Frontend</h4>
+          <br />
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>NextJS</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Streamlit</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Gradio</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4><i class="fa-solid fa-server fa-beat" style="--fa-animation-duration: 2s"></i><span></span>Frameworks Backend</h4>
+          <br />
+          <ul>
+            <li><i class="fa-solid fa-check"></i><span></span>Spring Boot</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Django</li>
+            <li><i class="fa-solid fa-check"></i><span></span>Express</li>
+          </ul>
+        </div>
+      </div>
     </main>
+    <!-- Script para utilizar Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>

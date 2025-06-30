@@ -9,47 +9,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
+    <!-- Ícones do Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
     <!-- Arquivo de estilos do trabalho -->
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="container">
     <!-- Header com os links para as diferentes páginas -->
     <header>
-      <ul>
-        <li><a href="../index.html">Sobre</a></li>
-        <li><a href="#">Formação</a></li>
-        <li><a href="./portfolio.html">Portfólio</a></li>
-        <li><a href="./contato.html">Contato</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Sobre</a></li>
+          <li><a class="selected" href="#">Formação</a></li>
+          <li><a href="./portfolio.html">Portfólio</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="divider"></div>
+
+      <!-- Seção contendo meu nome e cargos almejados -->
+      <!-- Optei por construir dessa maneira unindo a formatação de um CV e o campo "título" do perfil do Linkedin -->
+      <section class="name">
+        <div>
+          <h1>Leandro Fugioka</h1>
+          <p>Desenvolvedor de Agentes de IA | Engenheiro de Software de IA | Desenvolvedor IA | Cientista de Dados</p>
+        </div>
+      </section>
+
+      <div class="divider"></div>
     </header>
 
-    <div class="divider"></div>
-
-    <!-- Seção contendo meu nome e cargos almejados -->
-    <!-- Optei por construir dessa maneira unindo a formatação de um CV e o campo "título" do perfil do Linkedin -->
-    <section class="name">
-      <div>
-        <h1>Leandro Fugioka</h1>
-        <p>Desenvolvedor de Agentes de IA | Engenheiro de Software de IA | Desenvolvedor IA | Cientista de Dados</p>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
     <!-- Seção principal da página -->
-    <main>
+    <main class="formacao">
       <h2>Formação:</h2>
       <ul>
-        <li>
-          <p>Técnico em <strong>Análise e Desenvolvimento de Sistemas</strong> - Uninter - prev. de conclusão em dez/2026</p>
-        </li>
-        <li>
-          <p>Pós-Graduação em <strong>Ciência de Dados e Inteligência Artificial</strong> - Uninter - prev. conclusão em jun/2026</p>
-        </li>
-        <li>
-          <p>Bacharel em <strong>Engenharia Química</strong> - Universidade Estadual de Maringá - 2015</p>
-        </li>
+        <li><i class="fa-solid fa-check"></i><span></span>Técnico em <strong>Análise e Desenvolvimento de Sistemas</strong> - Uninter - prev. de conclusão em dez/2026</li>
+        <li><i class="fa-solid fa-check"></i><span></span>Bacharel em <strong>Engenharia Química</strong> - Universidade Estadual de Maringá - 2015</li>
+      </ul>
+
+      <h2>Idiomas:</h2>
+      <ul>
+        <li><i class="fa-solid fa-check"></i><span></span>Inglês Fluente</li>
       </ul>
     </main>
+    <!-- Script para utilizar Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>

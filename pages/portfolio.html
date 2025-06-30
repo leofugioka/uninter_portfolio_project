@@ -15,26 +15,28 @@
   <body class="container">
     <!-- Header com os links para as diferentes páginas -->
     <header>
-      <ul>
-        <li><a href="../index.html">Sobre</a></li>
-        <li><a href="./formacao.html">Formação</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="./contato.html">Contato</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Sobre</a></li>
+          <li><a href="./formacao.html">Formação</a></li>
+          <li><a class="selected" href="#">Portfólio</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="divider"></div>
+
+      <!-- Seção contendo meu nome e cargos almejados -->
+      <!-- Optei por construir dessa maneira unindo a formatação de um CV e o campo "título" do perfil do Linkedin -->
+      <section class="name">
+        <div>
+          <h1>Leandro Fugioka</h1>
+          <p>Desenvolvedor de Agentes de IA | Engenheiro de Software de IA | Desenvolvedor IA | Cientista de Dados</p>
+        </div>
+      </section>
+
+      <div class="divider"></div>
     </header>
-
-    <div class="divider"></div>
-
-    <!-- Seção contendo meu nome e cargos almejados -->
-    <!-- Optei por construir dessa maneira unindo a formatação de um CV e o campo "título" do perfil do Linkedin -->
-    <section class="name">
-      <div>
-        <h1>Leandro Fugioka</h1>
-        <p>Desenvolvedor de Agentes de IA | Engenheiro de Software de IA | Desenvolvedor IA | Cientista de Dados</p>
-      </div>
-    </section>
-
-    <div class="divider"></div>
 
     <!-- Seção principal da página -->
     <main class="main-section">
@@ -44,7 +46,7 @@
       <!-- Poderia ter utilizado um flexbox porém o grid facilita dispor os cards do projeto na posição de cada coluna -->
       <div class="cards-list">
         <!-- Card 1 - Web App de Imobiliária -->
-        <div>
+        <div class="card">
           <img src="image source" class="img-fluid rounded-top" alt="" />
 
           <div>
@@ -78,5 +80,12 @@
         </div>
       </div>
     </main>
+    <!-- Script para utilizar Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
